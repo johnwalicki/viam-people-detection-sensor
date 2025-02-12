@@ -1,0 +1,7 @@
+# Uncomment the following line if you would like to use a release version of the SDK
+viam-sdk
+viam-sdk[mlmodel]
+
+# This line points to the version of the SDK that lives at this project's root.
+# In production, you would likely want to use the above `viam-sdk` requirement.
+#../..
