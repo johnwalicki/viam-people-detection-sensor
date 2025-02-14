@@ -1,6 +1,6 @@
 # VIAM People Detection Sensor / Local Module Example
 
-This VIAM People Detection Sensor example demonstrates how to create custom modular resource using Viam's Python SDK, and how to connect it to a webcam / People detection vision model in the Viam App dashboard.
+This VIAM People Detection Sensor example demonstrates how to create a custom modular resource using Viam's Python SDK, and how to connect it to a webcam / People detection vision model in the Viam App dashboard.
 
 <center>
 <img src="images/peopleSensor-detected-true.png" width="600" alt="">
@@ -12,7 +12,7 @@ Modular resources allow you to define custom components and services, and add th
 
 Additional Viam examples:
 
-* Use GitHub CI to upload to the Viam Registry, take a look at: [python-example-module](https://github.com/viam-labs/python-example-module).
+* Use GitHub CI to upload to the Viam Registry, take a look at [python-example-module](https://github.com/viam-labs/python-example-module).
 * Use Docker to manage Python dependencies, take a look at [python-container-module](https://github.com/viamrobotics/python-container-module).
 
 ## Project structure
@@ -88,7 +88,7 @@ The `run.sh` script is the entrypoint for this module. To connect this module wi
 
 ## Adding and configuring a new sensor component
 
-Once the module has been added to your robot, add a new component that uses the `peopleSensorModule` model. Copy / modify the following json into the robot's configuration via the "{} json" button next to "Builder". See the [documentation](https://docs.viam.com/operate/get-started/other-hardware/#add-your-new-modular-resource-to-your-machines) for more details.
+Once the module has been added to your robot, add a new component that uses the `peopleSensorModule` model. Copy / modify the following json into the robot's configuration via the **{} json** button next to **Builder**. See the [documentation](https://docs.viam.com/operate/get-started/other-hardware/#add-your-new-modular-resource-to-your-machines) for more details.
 
 ![Viam app screenshot adding a local component via json](images/peopleSensorComponent-json.png)
 
@@ -123,9 +123,9 @@ An example configuration for a Sensor component could look like this:
 
 ### Attributes
 
-Note that this example has three attributes fields that get passed to the local module.  These can be used to customize which vision model and camera is selected and modify the confidence score of the people detector transform.
+This example has three attributes fields that get passed to the local module. These can be used to customize which vision model and camera is selected and modify the confidence score of the people detector transform.
 
-Note that the sensor reports the returned status from the `main.py` function `get_readings()` in the TEST **GetReadings** field of the Viam app.
+The sensor reports the returned status from the `main.py` function `get_readings()` in the TEST **GetReadings** field of the Viam app.
 
 ![Viam app screenshot of attributes](images/peopleSensorComponent-attributes.png)
 
