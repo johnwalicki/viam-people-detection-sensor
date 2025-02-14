@@ -28,9 +28,6 @@ async def main():
     reading = await sensor.get_readings()
     print(f"The reading is {reading}")
 
-    response = await sensor.do_command({"hello": "world"})
-    print(f"The response is {response}")
-
     await robot.close()
 
 
