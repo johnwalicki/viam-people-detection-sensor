@@ -67,7 +67,7 @@ Outside the `src` directory, there is a `client.py` file. You can use this file 
 
 ## Configuring and using the module
 
-These steps assume that you have a robot available at [app.viam.com](app.viam.com).
+These steps assume that you have a robot available at [app.viam.com](https://app.viam.com).
 
 The `run.sh` script is the entrypoint for this module. To connect this module with your robot, you must add this module's entrypoint to the robot's config. For example, the entrypoint file may be at `/home/user/viam/viam-people-detection-sensor/run.sh` and you must add this file path to your configuration. See the [documentation](https://docs.viam.com/operate/get-started/other-hardware/#upload-your-module) for more details.
 
@@ -88,7 +88,7 @@ The `run.sh` script is the entrypoint for this module. To connect this module wi
 
 ## Adding and configuring a new sensor component
 
-Once the module has been added to your robot, add a new component that uses the `peopleSensorModule` model. Copy / modify the following json into the robot's configuration via the **{} json** button next to **Builder**. See the [documentation](https://docs.viam.com/operate/get-started/other-hardware/#add-your-new-modular-resource-to-your-machines) for more details.
+Once the module has been added to your robot, add a new component that uses the `peopleSensorModule` model. Copy / modify the following json into the robot's configuration via the **{} JSON** button next to **Builder**. See the [documentation](https://docs.viam.com/operate/get-started/other-hardware/#add-your-new-modular-resource-to-your-machines) for more details.
 
 ![Viam app screenshot adding a local component via json](images/peopleSensorComponent-json.png)
 
