@@ -1,0 +1,26 @@
+{
+  "name": "@viamrobotics/sdk-node-peopleSensor-example",
+  "version": "0.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "@connectrpc/connect-node": "^1.5.0",
+    "@viamrobotics/sdk": "file:../..",
+    "node-datachannel": "^0.26.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "@viamrobotics/typescript-config": "^0.1.0",
+    "ansi-regex": ">=5.0.1",
+    "concurrently": "^5.3.0",
+    "set-value": ">=4.0.1",
+    "ts-loader": "^8.0.14",
+    "ts-protoc-gen": "^0.14.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "preinstall": "make -C ../../viam-typescript-sdk build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx --env-file=.env src/client.ts"
+  }
+}

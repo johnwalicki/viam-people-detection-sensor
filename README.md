@@ -2,6 +2,8 @@
 
 This VIAM People Detection Sensor example demonstrates how to create a custom modular resource using Viam's Python SDK, and how to connect it to a webcam / People detection vision model in the Viam App dashboard.
 
+To review this VIAM People Detection Sensor example implementation using Viam's TypeScript SDK / node, see this [README](node/README.md)
+
 <center>
 <img src="images/peopleSensor-detected-true.png" width="600" alt="">
 </center>
